@@ -24,6 +24,7 @@ root.title('Hola Mundo')
 #     l.pack()
 #     l2.pack()
 
+#solucion 3
 def open(img):
     top = Toplevel()
     top.title('Hola mundo, nueva ventana')
