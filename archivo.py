@@ -15,7 +15,7 @@ root.title('Hola Mundo: Archivos')
 # label2.pack()
 
 def open():
-    global imgTk
+    global imgTK
     root_filename = filedialog.askopenfilename(title='Elige  una foto', filetypes=(("Archivos PNG", "*.png"), ('Todos', '*')))
     label = Label(root, text=root_filename)
     label.pack()
