@@ -6,10 +6,20 @@ root.title('Hola Mundo')
 r = IntVar()
 r.set('2')
 
-Radiobutton(root, text='Opcion 1', variable=r, value=1).pack()
-Radiobutton(root, text='Opcion 2', variable=r, value=2).pack()
+CHANCHITOS = [
+    ('Feliz', 'Feliz'),
+    ('Triste', 'Triste'),
+    ('Amargado', 'Amargado'),
+    ('Wolfgang', 'Wolfgang')
+]
 
-label = Label(root, textvariable=r)
+chanchito = StringVar()
+chanchito.set('lala')
+
+for text, chancho in CHANCHITOS:
+    Radiobutton(root, text=text, variable=chanchito, value=chancho).pack()
+
+label = Label(root, textvariable=chanchito)
 label.pack()
 
 root.mainloop()
